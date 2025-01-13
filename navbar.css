@@ -2,7 +2,7 @@
     /* colors */
     --color-red: red;
     --color-purple: purple;
-    --color-yellow: yellow;
+    --color-yellow: yellow; 
 
     /* fonts */
     --section-header-fsz: 28px;
@@ -19,7 +19,8 @@
     list-style: none;
     box-sizing: border-box;
     color: var(--primary-color);
-    font-family: montserrat;
+    font-family: 'roboto';
+    line-height: 1.4rem;
 }
 
 body{
@@ -40,6 +41,7 @@ nav{
 
 .container{
     margin-top: 23px;
+    
 }
 
 .line1,.line2,.line3{
@@ -116,6 +118,8 @@ a.active,a:hover{
     label.short{
         display: inline;
     }
+
+    
 }
 
 @media(max-width: 952px) {
@@ -127,6 +131,7 @@ a.active,a:hover{
     nav ul li a{
         font-size: 16px;
     }
+    
 }
 
 @media(max-width: 858px) {
@@ -165,7 +170,10 @@ a.active,a:hover{
 } 
 
 .intro-pic{
-    background: url(photo_2024-11-22_14-32-50.jpg);
+    background: url(/photo_2024-11-22_14-32-50.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 0;
     margin: 0;
     height: 800px;
@@ -187,6 +195,12 @@ a.active,a:hover{
     font-size: 20px;
     width: 700px;
     padding-bottom: 150px;
+}
+
+.welcome-message{
+    font-size: 30px;
+    font-weight: bold;
+    justify-self: center;
 }
 
 section{
@@ -255,9 +269,38 @@ section{
 .card--info{
     text-align: center;
     font-size: 18px;
+    margin-top: 1.8rem;
 }
 
 .achievement--card{
     width: 25%;
+}
+
+.card h4{
+    margin-bottom: 0px;
+}
+
+.location h3{
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    color: #FFCB0D;
+    margin-bottom: 25px;
+}
+
+.map{
+    width: 100%;
+    text-align: center;
+}
+
+.socials{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bi a{
+    margin-left: 30px;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
